@@ -19,14 +19,14 @@ const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers];
 // takes in one argument, an integer, and returns a function that will multiply a fare for a ride
 
 
-function createFareMultiplier(integer) {
-  return function (fare){return integer * fare;
-  };
-}
+// function createFareMultiplier(integer) {
+//   return function (fare){return integer * fare;
+//   };
+// }
 
-// const createFareMultiplier = function(integer) {
-//    return function(fare) {return fare *= integer};
-//  }
+const createFareMultiplier = function(integer) {
+   return function(fare) {return fare *= integer};
+ }
 
 
 // Declare a variable with const and assign a function returned by createFareMultiplier() to it. Invoke createFareMultiplier() in such a way that the new fareDoubler() function accepts a fare as its lone argument and doubles it.
