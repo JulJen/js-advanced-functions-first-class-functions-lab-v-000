@@ -18,6 +18,13 @@ const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers];
 
 // takes in one argument, an integer, and returns a function that will multiply a fare for a ride
 
+
+function createFareMultiplier(integer){
+    return function (fare){
+        return integer * fare;
+    };
+};
+
 // const createFareMultiplier = function(integer) {
 //    return function(fare) {return fare *= integer};
 //  }
